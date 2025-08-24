@@ -118,7 +118,6 @@ The project database is designed to support core functionality such as user mana
   - `comment`  
 - **Notes:** A user can leave multiple reviews, but only one per property per booking. Properties can have many reviews.
 
----
 
 ### Entity Relationships
 - A **User** can list many **Properties**.  
@@ -127,4 +126,51 @@ The project database is designed to support core functionality such as user mana
 - A **Booking** has one **Payment**.  
 - A **Property** can have many **Reviews**, each written by a **User**.  
 
+## Feature Breakdown
+
+The Airbnb Clone project provides a variety of features to replicate the core functionality of Airbnb and ensure a smooth user experience:
+
+### 1. User Management
+- Allows users to register, log in, and manage their profiles securely.  
+- Includes role-based access (e.g., customer, host, admin) to ensure proper permissions for different types of users.  
+
+### 2. Property Management
+- Hosts can list, update, and remove properties with details such as title, description, location, and price.  
+- Enables users to browse available properties and filter them by location, price, or amenities.  
+
+### 3. Booking System
+- Customers can book properties for specific dates with real-time availability checks.  
+- Manages booking confirmations, cancellations, and modifications.  
+
+### 4. Payment Integration
+- Provides secure online payment for bookings.  
+- Ensures smooth transaction handling with support for payment status tracking (pending, completed, failed).  
+
+### 5. Review & Rating System
+- Allows users to leave reviews and ratings for properties they’ve booked.  
+- Helps build trust between hosts and customers by showcasing honest feedback.  
+
+### 6. Search & Filtering
+- Users can search properties by location, price range, and availability.  
+- Advanced filtering ensures customers can quickly find the most suitable property.  
+
+
+## API Security
+
+Security is critical in ensuring trust and protecting sensitive information in the Airbnb Clone project. Key measures include:
+
+### 1. Authentication
+- Uses secure login (e.g., JWT or OAuth2) to verify user identities.  
+- Prevents unauthorized access to the system.  
+
+### 2. Authorization
+- Role-based access ensures that only authorized users can perform certain actions (e.g., only hosts can list properties).  
+- Protects resources and prevents data misuse.  
+
+### 3. Data Encryption
+- Sensitive information (passwords, payment details) is encrypted both in transit (HTTPS) and at rest.  
+- Prevents data breaches and protects user privacy.  
+
+### 4. Rate Limiting
+- Limits the number of requ
 
