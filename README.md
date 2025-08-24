@@ -35,4 +35,37 @@ In our project, each team member has specific roles and responsibilities to ensu
 ### 7. DevOps Engineer
 - Sets up and manages deployment pipelines, CI/CD processes, and cloud infrastructure.  
 - Monitors system performance, reliability, and uptime.  
-- Automates repetitive tasks to streamline development and deployment.  
+- Automates repetitive tasks to streamline development and deployment.
+
+  ## Technology Stack
+
+This project uses a modern technology stack that supports scalability, performance, and maintainability. Below are the core technologies and their purposes in the project:
+
+### 1. Django
+- A high-level Python web framework used for building robust and secure server-side applications.  
+- Provides built-in features for authentication, ORM (Object-Relational Mapping), and RESTful API development.  
+
+### 2. PostgreSQL
+- A powerful open-source relational database system.  
+- Stores and manages structured data for the project while ensuring data consistency, integrity, and reliability.  
+
+### 3. GraphQL
+- A query language for APIs that allows clients to request only the data they need.  
+- Provides flexibility and efficiency in data fetching compared to traditional REST APIs.  
+
+### 4. Docker
+- A containerization platform used to package the application and its dependencies.  
+- Ensures consistent environments across development, testing, and production.  
+
+### 5. Git & GitHub
+- Git is a version control system for tracking code changes.  
+- GitHub hosts the project repository, enabling team collaboration, code reviews, and issue tracking.  
+
+### 6. HTML, CSS, and JavaScript
+- Core frontend technologies for structuring, styling, and adding interactivity to the web application.  
+- Ensure a responsive and user-friendly interface.  
+
+### 7. REST/GraphQL APIs
+- Provide communication between the frontend and backend.  
+- Ensure seamless data exchange with security and performance in mind.  
+
