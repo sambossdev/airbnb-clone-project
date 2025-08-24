@@ -67,5 +67,64 @@ This project uses a modern technology stack that supports scalability, performan
 
 ### 7. REST/GraphQL APIs
 - Provide communication between the frontend and backend.  
-- Ensure seamless data exchange with security and performance in mind.  
+- Ensure seamless data exchange with security and performance in mind.
+
+## Database Design
+
+The project database is designed to support core functionality such as user management, property listings, bookings, payments, and reviews. Below are the key entities, their important fields, and their relationships.
+
+### 1. Users
+- **Fields:**  
+  - `user_id` (Primary Key)  
+  - `name`  
+  - `email` (unique)  
+  - `password_hash`  
+  - `role` (e.g., admin, host, customer)  
+- **Notes:** Users can act as customers (booking properties) or hosts (listing properties).
+
+### 2. Properties
+- **Fields:**  
+  - `property_id` (Primary Key)  
+  - `user_id` (Foreign Key → Users)  
+  - `title`  
+  - `description`  
+  - `location`  
+- **Notes:** A property is created by a user (host). One user can have many properties.
+
+### 3. Bookings
+- **Fields:**  
+  - `booking_id` (Primary Key)  
+  - `user_id` (Foreign Key → Users)  
+  - `property_id` (Foreign Key → Properties)  
+  - `check_in_date`  
+  - `check_out_date`  
+- **Notes:** A booking links a user (customer) to a property. One property can have multiple bookings.
+
+### 4. Payments
+- **Fields:**  
+  - `payment_id` (Primary Key)  
+  - `booking_id` (Foreign Key → Bookings)  
+  - `amount`  
+  - `payment_date`  
+  - `status` (e.g., pending, completed, failed)  
+- **Notes:** Each booking has one corresponding payment record.
+
+### 5. Reviews
+- **Fields:**  
+  - `review_id` (Primary Key)  
+  - `user_id` (Foreign Key → Users)  
+  - `property_id` (Foreign Key → Properties)  
+  - `rating` (1–5)  
+  - `comment`  
+- **Notes:** A user can leave multiple reviews, but only one per property per booking. Properties can have many reviews.
+
+---
+
+### Entity Relationships
+- A **User** can list many **Properties**.  
+- A **User** can make many **Bookings**.  
+- A **Booking** is linked to one **Property** and one **User**.  
+- A **Booking** has one **Payment**.  
+- A **Property** can have many **Reviews**, each written by a **User**.  
+
 
