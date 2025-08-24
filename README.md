@@ -172,5 +172,23 @@ Security is critical in ensuring trust and protecting sensitive information in t
 - Prevents data breaches and protects user privacy.  
 
 ### 4. Rate Limiting
-- Limits the number of requ
+- Limits the number of require
+
+  ## CI/CD Pipeline
+
+CI/CD (Continuous Integration and Continuous Deployment) pipelines are automated workflows that help teams build, test, and deploy applications efficiently.  
+
+- **Continuous Integration (CI):** Ensures that every code change pushed to the repository is automatically built and tested, reducing bugs and integration issues.  
+- **Continuous Deployment (CD):** Automatically deploys tested code to staging or production environments, enabling faster and more reliable releases.  
+
+### Why It’s Important
+- Improves code quality by running automated tests before merging changes.  
+- Speeds up development by reducing manual steps.  
+- Ensures consistent deployments across different environments.  
+- Helps detect and fix issues early in the development process.  
+
+### Tools Used
+- **GitHub Actions:** Automates testing, building, and deployment tasks directly from the repository.  
+- **Docker:** Ensures consistent application enviro
+
 
