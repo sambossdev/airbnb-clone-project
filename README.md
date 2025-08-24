@@ -5,6 +5,7 @@ Booking System: Create a booking mechanism for users to reserve properties and m
 Payment Processing: Integrate a payment system to handle transactions and record payment details.
 Review System: Allow users to leave reviews and ratings for properties.
 Data Optimization: Ensure efficient data retrieval and storage through database optimizations.
+
 🛠️ Features Overview
 1. API Documentation
 OpenAPI Standard: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration.
@@ -28,6 +29,7 @@ Features: Post and manage reviews for properties.
 7. Database Optimizations
 Indexing: Implement indexes for fast retrieval of frequently accessed data.
 Caching: Use caching strategies to reduce database load and improve performance.
+
 ⚙️ Technology Stack
 Django: A high-level Python web framework used for building the RESTful API.
 Django REST Framework: Provides tools for creating and managing RESTful APIs.
@@ -37,6 +39,7 @@ Celery: For handling asynchronous tasks such as sending notifications or process
 Redis: Used for caching and session management.
 Docker: Containerization tool for consistent development and deployment environments.
 CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
+
 👥 Team Roles
 Backend Developer: Responsible for implementing API endpoints, database schemas, and business logic.
 Database Administrator: Manages database design, indexing, and optimizations.
